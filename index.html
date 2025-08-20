@@ -3,24 +3,202 @@
 <head>
     <meta charset="UTF-8" />
     <title>Pflegedienst DV GmbH</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="container-text">
-            <h1>Website under contruction</h1>
-
-            <h3>Die Seite ist derzeit noch im Aufbau</h3>
-            
-            <p>Sie erreichen uns von Montag bis Freitag 09:00 bis 17:00 Uhr</p>
-            <div class="container-contact">
-                <span><b>Telefon:</b> <a href="tel:+496980086683">069/800-866-85</a></span>
-                <span><b>E-mail:</b> <a href="mailto:pflegedienstdv@gmail.com">pflegedienstdv@gmail.com</a></span>
-                <span><b>Adresse:</b> <a target="_blank" href="https://maps.app.goo.gl/oiWcR9HkQwmR177m7">Falkstraße 30, 60487 Frankfurt am Main</a></span>
-            </div>
-        </div>
-        <img class="container-image" src="/assets/iconfinder-websiteunderconstruction-4417109_116618.webp" alt="Example Image" />
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#service">Unsere Leistungen</a>
+        <a href="#about-us">Warum wir</a>
+        <a href="#karriere">Karriere</a>
+        <a href="#contact">Kontakt</a>
     </div>
+    <div class="container">
+        <header id="home">
+            <div class="header">
+                <img class="header__logo" src="/assets/PflegedientsDVGmbh-logo.svg" alt="">
+                <div class="header__text">
+                    <ul class="dots">
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                    </ul>
+                    <h1>Mit Vertrauen gepflegt.</h1>
+                    <p>Pflegedienst "DV" bietet individuelle Unterstützung und Betreuung direkt bei Ihnen vor Ort.</p>
+
+                    <button onclick="handleClickEvent('contact')">Kontakt</button>
+                </div>
+
+                <div class="header__image">
+                    <img src="/assets/favicon.svg" alt="">
+                </div>
+            </div>
+        </header>
+        <section id="service" class="service">
+            <div class="service__title">
+                <p>SCHAUEN SIE</p>
+                <h2>Unsere Leistungen</h2>
+            </div>
+
+            <div class="service__cards">
+                <div class="service__cards--item">
+                    <img src="/assets/house.svg" alt="">
+                    <h3>24-Stunden-Versorgung</h3>
+                    <p>Die spezielle Krankenbeobachtung  umfasst beständige Beobachtung des Patienten bis zu 24 Stunden täglich sowie die Übernahme aller anfallenden pflegerischen Maßnahmen</p>
+                </div>
+                <div class="service__cards--item">
+                    <img src="/assets/mask.svg" alt="">
+                    <h3>Beatmungspflegezu Hause</h3>
+                    <p>Medizinische und pflegerische Unterstützung bei Ihnen zu Hause – zuverlässig, respektvoll und individuell abgestimmt.</p>
+                </div>
+                <div class="service__cards--item">
+                    <img src="/assets/tracheo.svg" alt="">
+                    <h3>Versorgung bei Tracheostoma</h3>
+                    <p>Die Versorgung eines Tracheostomas und der regelmäßige Wechsel der Kanüle wird vom Pflegedienst übernommen</p>
+                </div>
+                <div class="service__cards--item">
+                    <img src="/assets/monitor.svg" alt="">
+                    <h3>Monitoring der Vitalfunktionen</h3>
+                    <p>Kontinuierliche Überwachung wichtiger Körperfunktionen wie Puls, Atmung und Sauerstoffsättigung.</p>
+                </div>
+                <div class="service__cards--item">
+                    <img src="/assets/phone.svg" alt="">
+                    <h3>Pflegeberatung</h3>
+                    <p>Individuelle Beratung zu Pflegegraden, Leistungen der Pflegekasse gemäß § 37 Abs. 3 SGB XI.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="about">
+            <div class="about__image">
+                <img class="about__logo" src="" alt="">
+            </div>
+
+            <div class="about__text">
+                <ul class="dots">
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+                <h2>Warum Pflegedienst DV?</h2>
+                <p>Vertrauen, auf das Sie zählen können.</p>
+                <span>
+                    Pflegedienst „DV“ GmbH ist spezialisiert auf die Versorgung von intensivpflegebedürftigen Menschen – insbesondere außerklinisch beatmeten Patient*innen.
+                    Unser Team aus erfahrenen Pflegefachkräften garantiert Ihnen eine individuelle und hochwertige Versorgung im häuslichen Umfeld – auch an Wochenenden und Feiertagen, rund um die Uhr.
+                </span>
+                <button onclick="handleClickEvent('contact')">Kontakt</button>
+            </div>
+        </section>
+
+        <section id="karriere" class="career">
+            <div class="career__info">
+                <span>Karriere</span>
+                <h2>Werden Sie Teil unseres Teams!</h2>
+                <p>Sie sind examinierte Pflegefachkraft und verfügen über Erfahrung in der Intensivpflege? Dann freuen wir uns auf Ihre Bewerbung!</p>
+            
+                <div class="career__info--points">
+                    <h3>Voraussetzungen:</h3>
+                    <div class="career__info--points-item">
+                        <img src="/assets/check-icon.png" alt="">
+                        <p>Erfolgreich abgeschlossener Basis- oder Expertenkurs für außerklinische Beatmung</p>
+                    </div>
+                    <div class="career__info--points-item">
+                        <img src="/assets/check-icon.png" alt="">
+                        <p>Mindestens ein Jahr Berufserfahrung im Bereich der außerklinischen Intensivpflege</p>
+                    </div>
+                </div>
+
+                <p>Nehmen Sie Kontakt mit uns auf – wir freuen uns auf motivierte, engagierte Fachkräfte mit Herz und Kompetenz.</p>
+
+                <div class="career__info--dots-wrap">
+                    <ul class="dots">
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="career__img"></div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact__title">
+                <h2>Nehmen Sie Kontakt mit uns auf</h2>
+                <p>Ob Anfrage, Rückrufwunsch oder persönliche Beratung - wir sind gerne für Sie da.</p>
+            </div>
+
+            <div class="contact__tabs">
+                <form 
+                    id="submit-form"
+                    class="contact__form"
+                    action="https://formspree.io/f/xkgzabpo"
+                    method="POST"
+                >
+                    <input type="text" placeholder="Ihr Name" name="name" id="name" required>
+                    <input type="email" placeholder="Ihre E-Mail-Adresse" name="email" id="email" required>
+                    <input type="text" placeholder="Betreff" name="subject" id="subject" required>
+                    <textarea name="message" placeholder="Ihre Nachricht..." id="message" required></textarea>
+                    <button id="form-btn" type="submit"></button>
+                </form>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="modal-content--message">
+                            <img id="successLogo" class="modal-content--success-logo" src="/assets/success.svg">
+                            <img id="errorLogo" class="modal-content--error-logo" src="/assets/error.svg">
+                            <p id="my-form-status" />
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__info">
+                    <div class="contact__info--item">
+                        <img src="/assets/contact-email.svg" alt="">
+                        <div class="contact__info--text">
+                            <h4>E-Mail</h4>
+                            <span><b><a href="mailto:pflegedienstdv@gmail.com">pflegedienstdv@gmail.com</a></b></span>
+                        </div>
+                    </div>
+                    <div class="contact__info--item">
+                        <img src="/assets/contact-phone.svg" alt="">
+                        <div class="contact__info--text">
+                            <h4>Telefon</h4>
+                            <p>Montag bis Freitag von 9:00 bis 17:00 Uhr</p>
+                            <span><b><a href="tel:+496980086683">069/800-866-85</a></b>(Fax: 069 800 866 84)</span>
+                        </div>
+                    </div>
+                    <div class="contact__info--item">
+                        <img src="/assets/icon-location.svg" alt="">
+                        <div class="contact__info--text">
+                            <h4>Besuchen Sie uns</h4>
+                            <p>Kommen Sie vorbei oder schreiben Sie uns per Post</p>
+                            <span><b><a target="_blank" href="https://maps.app.goo.gl/oiWcR9HkQwmR177m7">Falkstraße 30, 60487 Frankfurt am Main</a></b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="heart-section">
+            <img class="heart" src="/assets/balck-heart.svg" alt="">
+        </section>
+    </div>
+    <footer class="footer">
+        <img src="/assets/PflegedientsDVGmbh-logo.svg" alt="">
+        <div>
+            <p>© 2025 Pflegedienst DV GmbH. Alle Rechte vorbehalten.</p>
+        </div>
+        <div>
+            <a href="/impressum.html" target="_blank">Impressum</a>
+            <span>|</span>
+            <a href="/datenschutz.html" target="_blank">Datenschutz</a>
+        </div>
+    </footer>
+
+    <script src="/global.js"></script>
 </body>
 </html>

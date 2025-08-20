@@ -1,0 +1,24 @@
+{
+  "name": "pflegedienstdv",
+  "version": "1.0.0",
+  "description": "Pushing to GitHub will automaticly deploy on Netlify host domains",
+  "homepage": "https://github.com/milo-je/pflegedienstdv#readme",
+  "bugs": {
+    "url": "https://github.com/milo-je/pflegedienstdv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milo-je/pflegedienstdv.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-scss": "sass style.scss style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
